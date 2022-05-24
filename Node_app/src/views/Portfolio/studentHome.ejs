@@ -1,0 +1,153 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+    <div class="container border border-primary">
+        <h1 class="display-4">
+            <%= user.name
+                %>
+        </h1>
+        <div class="my-3 fs-4">
+            <h3>About me:</h3>
+            <p>
+                <%= user.about
+                    %>
+            </p>
+        </div>
+
+        <div class="my-5 fs-4">
+            <h3>Bachelor Of Engineering </h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engineering is an academic undergraduate degree
+                awarded to a student after four years of
+                studying, I am currently pursuing engineering in <b>
+                    <%= user.engineering.ecollegename.toString().toUpperCase()
+                        %>
+                </b> (<%= user.engineering.eboard
+                    %> ) in <b>
+                        <%= user.engineering.ebranch.toString().toUpperCase()
+                            %>
+                    </b> with aggregate CGPA <%= user.engineering.ecgpa
+                        %>, in the city <%= user.engineering.ecity
+                            %> and will be passed out in the year 2023.
+            </p>
+        </div>
+
+        <% if(user.diploma)
+           {%>
+            <div class="my-5 fs-4">
+                <h3>Diploma Education</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Diploma in Engineering or Diploma in
+                    Technical Education or Technical Diploma is a program focused on practical and skills-oriented
+                    training. It is a technical course that only covers the essentials when ranked with an undergraduate
+                    engineering degree.
+                    I have studied in <%= user.diploma.dcollegename
+                        %> Diploma college in <%= user.diploma.dbranch
+                            %> Branch with CGPA of <%= user.diploma.dcgpa
+                                %> ( <%= user.diploma.dyearofpass
+                                    %> ) in <%= user.diploma.dcity
+                                        %> City
+                </p>
+            </div>
+            <% }
+               %>
+
+                <div class="my-5 fs-4">
+                    <h3>Pre-University Education</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Pre-University course encompasses the
+                        final two years of higher secondary education, which is equivalent to classes 11 and 12 of CBSE
+                        (Central Board of Secondary Education), or plus 1 and plus 2 in other similar boards of
+                        education, I have studied in <b>
+                            <%= user.puc.collegename.toString().toUpperCase()
+                                %>
+                        </b> Pre university college with <b>
+                            <%= user.puc.pcombination
+                                %>
+                        </b> Combination ( <%= user.puc.pyearofpass
+                            %> ) and scored <%= user.puc.pmarks
+                                %>
+                                <% if(user.puc.pmarks
+                                   <
+                                   11)
+                                   {
+                                   %>CGPA <% }
+                                       else
+                                       {
+                                       %>% <% }
+                                           %> in <%= user.puc.pcity
+                                                %> City</p>
+                </div>
+
+                <div class="my-5 fs-4">
+                    <h3>SSLC Education</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Secondary School Certificate, also
+                        called SSC or Matriculation examination, is a public examination in India conducted by
+                        educational boards for the successful completion of the secondary education exam in these
+                        countries. I have studied in <b>
+                            <%= user.school.schoolname
+                                %>
+                        </b> School in <b>
+                            <%= user.school.sboard
+                                %>
+                        </b> board ( <%= user.school.syearofpass
+                            %> ) in <%= user.school.scity
+                                %> City</p>
+                </div>
+
+                <div class="my-5"
+                     style="width: 20cm; position: relative; left: 15%; ">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-around">
+                            <a href="http://localhost:3000/myProjectsAndInternships"
+                               style="text-decoration: none;">
+                                <img src="https://elearningindustry.com/wp-content/uploads/2020/06/create-online-training-for-skill-based-certifications.jpg"
+                                     width="350px"
+                                     alt="">
+                                <p class=" fs-3 mt-1"
+                                   style="color:grey ;">My projects & Internships!</p>
+                            </a>
+
+                            <a href="http://localhost:3000/myAchievements"
+                               style="text-decoration: none;">
+                                <img src="https://insights.dice.com/wp-content/uploads/2020/08/shutterstock_675956599.jpg?hl=en_IN"
+                                     width="300px"
+                                     height="200px"
+                                     alt="">
+                                <p class="text-center fs-3 mt-1"
+                                   style="color:grey ;">My Achievements</p>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-around">
+                            <a href="http://localhost:3000/myCoursesAndCertifications"
+                               style="text-decoration: none;">
+                                <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/01/Online_portfolio_structuring_tips_jpg_pDyutGDi.jpg?auto=format&q=60&w=1280&h=720&fit=crop&crop=faces"
+                                     width="350px"
+                                     alt="">
+                                <p class=" fs-3 mt-1"
+                                   style="color:grey ;">Courses and Certifications</p>
+                            </a>
+
+                            <a href="http://localhost:3000/mySkills"
+                               style="text-decoration: none;">
+                                <img src="https://www.trainingexpress.org.uk/wp-content/uploads/2020/08/Facilities-Management-Diploma.jpg"
+                                     width="300px"
+                                     height="200px"
+                                     alt="">
+                                <p class="text-center fs-3 mt-1"
+                                   style="color:grey ;">Skills</p>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a href='http://localhost:3000/myStrengthsAndWeaknessess'
+                               style="text-decoration: none; position: relative; left: 5%;">
+                                <img src="https://media.istockphoto.com/vectors/business-ability-concept-vector-id510787606"
+                                     width="300px"
+                                     height="200px"
+                                     alt="">
+                                <p class="text-center fs-3 mt-1"
+                                   style="color:grey ;">Strengths and Weaknesses</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+    </div>

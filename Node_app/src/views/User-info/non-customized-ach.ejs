@@ -1,0 +1,255 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+
+    <div class="container my-4 info-main-box">
+        <h1>Non-customized Achievement</h1>
+        <form action='/mappe.com/non-customized' method="post">
+
+            <!-- Academics details -->
+            <div class="my-4">
+                <h2>Academic Achievements</h2>
+                <div class="row my-4">
+                    <div class="col-6 offset-3 d-flex justify-content-around">
+                        <span>
+                            <label for="webinar">Webinar</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   name="acadtype"
+                                   id="webinar"
+                                   value="webinar"
+                                   placeholder="Webinar"
+                                   aria-label="Webinar">
+                        </span>
+                        <span>
+
+                            <label for="hackathon">Hackathon</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   id="hackathon"
+                                   name="acadtype"
+                                   value="hackathon"
+                                   placeholder="Hackathon"
+                                   aria-label="Hackathon">
+                        </span>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="acadname">Name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="acadname"
+                               id="acadname"
+                               placeholder="Academic name"
+                               aria-label="Academic name">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="acadorganizedby">Orgaized by : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="acadorganizedby"
+                               id="acadorganizedby"
+                               placeholder="Orgaized by"
+                               aria-label="Orgaized by">
+                    </div>
+                    <div class="col">
+                        <label for="acadprize">Prize</label>
+                        <select class="form-select"
+                                name="acadprize"
+                                aria-label="Default select example">
+                            <option selected>Select here</option>
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                            <option value="Participated">Participated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- co-ordinator details -->
+            <div class="my-4">
+                <h2>Co-ordinator Achievements</h2>
+                <div class="row my-4">
+                    <div class="col-6 offset-3 d-flex justify-content-around">
+                        <span>
+                            <label for="club">Club</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   name="cotype"
+                                   id="club"
+                                   value="club"
+                                   placeholder="Club"
+                                   aria-label="Club">
+                        </span>
+                        <span>
+
+                            <label for="event">Event</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   id="event"
+                                   name="cotype"
+                                   value="event"
+                                   placeholder="Event"
+                                   aria-label="Event">
+                        </span>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="coname">Name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="coname"
+                               id="coname"
+                               placeholder="Name "
+                               aria-label="First name">
+                    </div>
+
+                    <div class="col">
+                        <label for="studentRole">Role : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="corole"
+                               id="studentRole"
+                               placeholder="Student role"
+                               aria-label="role">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="codescription">Description</label>
+                        <textarea class="form-control"
+                                  id="codescription"
+                                  name="codescription"
+                                  rows="3"
+                                  placeholder="Share description here"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cultural details -->
+            <div class="my-4">
+                <h2>Cultural Achievements</h2>
+                <div class="row my-4">
+                    <div class="col-6 offset-3 d-flex justify-content-around">
+                        <span>
+                            <label for="dance">Dance</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   name="cultype"
+                                   id="dance"
+                                   value="dance"
+                                   placeholder="dance"
+                                   aria-label="dance">
+                        </span>
+                        <span>
+
+                            <label for="music">Music</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   id="music"
+                                   name="cultype"
+                                   value="music"
+                                   placeholder="music"
+                                   aria-label="music">
+                        </span>
+                        <span>
+                            <label for="culevent">Skit</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   id="culevent"
+                                   name="cultype"
+                                   value="skit"
+                                   placeholder="Event"
+                                   aria-label="Event">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="culturalname">Event Name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="culturalname"
+                               id="culturalname"
+                               placeholder="Event name here"
+                               aria-label="culturalname">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="cuorganizedby">Orgaized by : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="cuorganizedby"
+                               id="cuorganizedby"
+                               placeholder="Orgaized by"
+                               aria-label="Orgaized by">
+                    </div>
+                    <div class="col">
+                        <label for="cuprize">Prize</label>
+                        <select class="form-select"
+                                name="cuprize"
+                                id="cuprize"
+                                aria-label="Default select example">
+                            <option selected>Select here</option>
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                            <option value="Participated">Participated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sports details -->
+            <div class="my-4">
+                <h2>Sports Achievements</h2>
+
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="sportsname">Sport Name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="sportsname"
+                               id="sportsname"
+                               placeholder="Sports name"
+                               aria-label="Sports name">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="spoperiod">Period : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="spoperiod"
+                               id="spoperiod"
+                               placeholder="Period here"
+                               aria-label="Period here">
+                    </div>
+                    <div class="col">
+                        <label for="spoprize">Prize</label>
+                        <select class="form-select"
+                                name="spoprize"
+                                id="spoprize"
+                                aria-label="Default select example">
+                            <option selected>Select here</option>
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                            <option value="Participated">Participated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary">Next > </button>
+        </form>
+
+    </div>

@@ -1,0 +1,39 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+
+    <div class="container my-4">
+        <h2>General Details </h2>
+        <form action="/mappe.com/details"
+              method="post">
+            <div class="row my-4">
+                <div class="col">
+                    <label for="about">About</label>
+                    <textarea class="form-control"
+                              placeholder="About yourself"
+                              name="about"
+                              id="about"
+                              rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-6">
+                    <label for="strength">Strength</label>
+                    <textarea class="form-control"
+                              placeholder="Your Strengths"
+                              name="strength"
+                              id="strength"
+                              rows="10"></textarea>
+                </div>
+                <div class="col-6">
+                    <label for="weakness">Weakness</label>
+                    <textarea class="form-control"
+                              placeholder="Your Weaknesses"
+                              name="weakness"
+                              id="weakness"
+                              rows="10"></textarea>
+                </div>
+            </div>
+
+            <button class="btn btn-success">Finish</button>
+        </form>
+    </div>

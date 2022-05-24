@@ -1,0 +1,348 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+
+    <div class="container info-main-box">
+        <h1>Education Details </h1>
+        <form action='/mappe.com/edu-details' method="post">
+
+            <!-- school details -->
+            <h2 class="mt-5">School Details : </h2>
+            <div class="row my-4">
+                <div class="col">
+                    <label for="schoolname"
+                           class="form-label">School name : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="schoolname"
+                           id="schoolname"
+                           placeholder="Enter your school name">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="city"
+                           class="form-label">City : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="scity"
+                           id="city"
+                           placeholder="Enter your city name">
+                </div>
+                <div class="col">
+                    <label for="pincode"
+                           class="form-label">Pincode : </label>
+                    <input type="number"
+                    step="any"
+                           class="form-control"
+                           name="spincode"
+                           id="pincode"
+                           placeholder="Enter city pincode">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="yearofpass"
+                           class="form-label">Year of passing : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="syearofpass"
+                           id="yearofpass"
+                           placeholder="Enter year of passing">
+                </div>
+                <div class="col">
+                    <label for="marks"
+                           class="form-label">Percentage / CGPA : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="smarks"
+                           id="marks"
+                           placeholder="Enter Percentage or cgpa">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <label for="board"
+                       style="text-align: center;">Board</label>
+                <div class="col-6 offset-3 d-flex justify-content-around">
+                    <span>
+                        <label for="cbsc">CBSC</label>
+                        <input type="radio"
+                               class="form-control-radio"
+                               name="sboard"
+                               value="CBSC"
+                               id="cbsc">
+                    </span>
+                    <span>
+                        <label for="state">State</label>
+                        <input type="radio"
+                               class="form-control-radio"
+                               id="state"
+                               value="state"
+                               name="sboard">
+                    </span>
+                    <span>
+                        <label for="ICSC">ICSC</label>
+                        <input type="radio"
+                               class="form-control-radio"
+                               value="ICSC"
+                               id="ICSC"
+                               name="sboard">
+                    </span>
+                </div>
+            </div>
+
+            <!-- college details -->
+            <h2 class="mt-5">College details : </h2>
+            <div class="row my-4">
+                <div class="col">
+                    <label for="collegename"
+                           class="form-label">College name : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="collegename"
+                           id="collegename"
+                           placeholder="Enter your college name">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="city"
+                           class="form-label">City : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="pcity"
+                           id="city"
+                           placeholder="Enter your city name">
+                </div>
+                <div class="col">
+                    <label for="pincode"
+                           class="form-label">Pincode : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="ppincode"
+                           id="pincode"
+                           placeholder="Enter city pincode">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="yearofpass"
+                           class="form-label">Year of passing : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="pyearofpass"
+                           id="yearofpass"
+                           placeholder="Enter year of passing">
+                </div>
+                <div class="col">
+                    <label for="marks"
+                           class="form-label">Percentage / CGPA : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="pmarks"
+                           id="marks"
+                           placeholder="Enter Percentage or cgpa">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="board"
+                           style="text-align: center;">Board</label>
+                    <div class="col-6 d-flex justify-content-around">
+                        <span>
+                            <label for="ccbsc">CBSC</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   value="CBSC"
+                                   name="pboard"
+                                   id="ccbsc">
+                        </span>
+                        <span>
+                            <label for="cstate">State</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   value="State"
+                                   id="cstate"
+                                   name="pboard">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="combination">Combination</label>
+                    <select class="form-select" name="pcombination"
+                            aria-label="Default select example">
+                        <option selected>Select combination</option>
+                        <option value="PCMB">PCMB</option>
+                        <option value="PCMC">PCMC</option>
+                        <option value="PCME">PCME</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Diploma details  -->
+            <h2 class="mt-5">Diploma Details : </h2>
+            <div class="row my-4">
+                <div class="col">
+                    <label for="collegename"
+                           class="form-label">Diploma college name : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="dcollegename"
+                           id="collegename"
+                           placeholder="Enter your school name">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="city"
+                           class="form-label">City : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="dcity"
+                           id="city"
+                           placeholder="Enter your city name">
+                </div>
+                <div class="col">
+                    <label for="pincode"
+                           class="form-label">Pincode : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="dpincode"
+                           id="pincode"
+                           placeholder="Enter city pincode">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="yearofpass"
+                           class="form-label">Year of passing : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="dyearofpass"
+                           id="yearofpass"
+                           placeholder="Enter year of passing">
+                </div>
+                <div class="col">
+                    <label for="marks"
+                           class="form-label">Percentage / CGPA : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="dmarks"
+                           id="marks"
+                           placeholder="Enter Percentage or cgpa">
+                </div>
+
+                <div class="col">
+                    <label for="branch"
+                           class="form-label">Branch : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="dbranch"
+                           id="branch"
+                           placeholder="Enter your branch">
+                </div>
+            </div>
+
+            <!-- Engineering details -->
+            <h2 class="mt-5">Engineering Details : </h2>
+            <div class="row my-4">
+                <div class="col">
+                    <label for="ecollegename"
+                           class="form-label">Engineering college name : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="ecollegename"
+                           id="ecollegename"
+                           placeholder="Enter your Engineering college name">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="city"
+                           class="form-label">City : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="ecity"
+                           id="city"
+                           placeholder="Enter your city name">
+                </div>
+                <div class="col">
+                    <label for="pincode"
+                           class="form-label">Pincode : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="epincode"
+                           id="pincode"
+                           placeholder="Enter city pincode">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col">
+                    <label for="yearofpass"
+                           class="form-label">Year of passing : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="eyearofpass"
+                           id="yearofpass"
+                           placeholder="Enter year of passing">
+                </div>
+                <div class="col">
+                    <label for="marks"
+                           class="form-label">Percentage / CGPA : </label>
+                    <input type="number"
+                           class="form-control"
+                           name="emarks"
+                           id="marks"
+                           placeholder="Enter Percentage or cgpa">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+
+                    <label for="branch"
+                           class="form-label">Branch : </label>
+                    <input type="text"
+                           class="form-control"
+                           name="ebranch"
+                           id="branch"
+                           placeholder="Enter your branch">
+                </div>
+
+                <div class="col">
+                    <div class="d-flex justify-content-around mt-5">
+                        <label for="university">University</label>
+                        <span>
+                            <label for="vtu">Vtu</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   value="vtu"
+                                   name="eboard"
+                                   id="vtu">
+                        </span>
+                        <span>
+
+                            <label for="autunomous">Autunomous</label>
+                            <input type="radio"
+                                   class="form-control-radio"
+                                   id="autunomous"
+                                   value="autunomous"
+                                   name="eboard">
+                        </span>
+                    </div>
+                </div>
+                </div>
+
+                <button class="btn btn-primary my-4 ">Next > </button>
+        </form>
+    </div>

@@ -1,0 +1,161 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+
+    <div class="container info-main-box">
+        <h1>Projects and Internships</h1>
+        <form action="/mappe.com/projectAndInternship"
+              method="post">
+            <div class="my-5">
+                <h2>Project details</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="projectname"
+                               class="form-label">Project name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="projectname"
+                               id="projectname"
+                               placeholder="Enter your Project name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="projectguide"
+                               class="form-label">Project guide : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="projectguide"
+                               id="projectguide"
+                               placeholder="Enter your Project guide">
+                    </div>
+                    <div class="col">
+                        <label for="projectdomain"
+                               class="form-label">Project domain : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="projectdomain"
+                               id="projectdomain"
+                               placeholder="Enter your Project domain">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="description">Description</label>
+                        <textarea class="form-control"
+                                  placeholder="Description"
+                                  name="projectdescription"
+                                  id="description"
+                                  rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="start_date"
+                               class="form-label">Start date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="start_date"
+                               id="start_date"
+                               placeholder="Enter your start date">
+                    </div>
+                    <div class="col">
+                        <label for="end_date"
+                               class="form-label">End date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="end_date"
+                               id="end_date"
+                               placeholder="Enter your end date">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="language">Languages used</label>
+                        <textarea class="form-control"
+                                  placeholder="Languages used "
+                                  name="languages"
+                                  id="language"
+                                  rows="4"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label for="projectlink"
+                               class="form-label">Project Link : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="projectlink"
+                               id="projectlink"
+                               placeholder="Enter your Project Link">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- internship idea  -->
+            <div class="my-4">
+                <h2>Internships details</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="campanyname"
+                               class="form-label">campany Name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="campanyname"
+                               id="campanyname"
+                               placeholder="Enter your campany name">
+                    </div>
+                    <div class="col">
+                        <label for="jobrole"
+                               class="form-label">Job role : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="jobrole"
+                               id="jobrole"
+                               placeholder="Enter your Job role">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="intern_start_date"
+                               class="form-label">Start date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="intern_start_date"
+                               id="intern_start_date"
+                               placeholder="Enter your start date">
+                    </div>
+                    <div class="col">
+                        <label for="intern_end_date"
+                               class="form-label">End date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="intern_end_date"
+                               id="intern_end_date"
+                               placeholder="Enter your end date">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="aboutjob">Description</label>
+                        <textarea class="form-control"
+                                  placeholder="Languages used "
+                                  name="aboutjob"
+                                  id="language"
+                                  rows="4"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary">Next ></button>
+        </form>
+    </div>

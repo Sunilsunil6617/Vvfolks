@@ -1,0 +1,136 @@
+<% layout('../layouts/infoBoilerplate')
+   %>
+
+    <div class="container">
+        <h1>Courses and Certification Details </h1>
+        <form action="/mappe.com/courseOrCertification"
+              method="post">
+            <div class="my-4">
+                <h2>Course details</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="coursename"
+                               class="form-label">Course name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="coursename"
+                               id="coursename"
+                               placeholder="Enter your course name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="platformname"
+                               class="form-label">Platform name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="courseplatform"
+                               id="platformname"
+                               placeholder="Enter your Platform name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="courselink"
+                               class="form-label">Course link : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="courselink"
+                               id="courselink"
+                               placeholder="Enter your Course link">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label for="certificate_link"
+                               class="form-label">certificate link : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="certificate_link"
+                               id="certificate_link"
+                               placeholder="Enter your Certification name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="start_date"
+                               class="form-label">start date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="start_date"
+                               id="start_date"
+                               placeholder="Enter your Start date">
+                    </div>
+
+                    <div class="col">
+                        <label for="end_date"
+                               class="form-label">end date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="end_date"
+                               id="end_date"
+                               placeholder="Enter your End date">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- certification details -->
+
+            <div class="my-4">
+                <h2>Certification Details</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="certificatename"
+                               class="form-label">certificate name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="certificatename"
+                               id="certificatename"
+                               placeholder="Enter your Certification name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="certificationplatform"
+                               class="form-label">Platform name : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="certificationplatform"
+                               id="certificationplatform"
+                               placeholder="Enter your Platform name">
+                    </div>
+
+                    <div class="col">
+                        <label for="start_date"
+                               class="form-label">Start date : </label>
+                        <input type="number"
+                               class="form-control"
+                               name="cert_start_date"
+                               id="start_date"
+                               placeholder="Enter your start date">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="certificationlink"
+                               class="form-label">Certification link : </label>
+                        <input type="text"
+                               class="form-control"
+                               name="certificationlink"
+                               id="certificationlink"
+                               placeholder="Enter your certification link">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary">Next ></button>
+        </form>
+    </div>
